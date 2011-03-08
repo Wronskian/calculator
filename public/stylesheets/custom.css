@@ -1,0 +1,21 @@
+input#input {
+  width: 710px;
+  padding: 5px;
+  margin-top: 0px;
+}
+
+div#stack {
+  width: 383px;
+  height: 363px;
+  margin: 5px;
+  border: 1px solid #bbb;
+  overflow: auto;
+  text-align: left;
+}
+
+div#output {
+  width: 383px;
+  height: 363px;
+  margin: 5px;
+  border: 1px solid #bbb;
+}

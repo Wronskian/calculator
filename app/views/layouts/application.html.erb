@@ -8,12 +8,22 @@
 </head>
 <body>
   <div class = "container">
+  
+    <center>
     
     <%= render 'layouts/header' %>
-  
-    <%= yield %>
+    
+    <div class = "span-2">&nbsp;</div>
+    
+    <div class = "span-20">
+      <%= yield %>
+    </div>
+    
+    <div class = "span-2 last">&nbsp;</div>
     
     <%= render 'layouts/footer' %>
+    
+    </center>
 
   </div>
 </body>
