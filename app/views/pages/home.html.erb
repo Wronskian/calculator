@@ -4,11 +4,11 @@
   <% end %>
 </div>
 
-<div class="span-10 last" id="output">
+<div class="span-10" id="output">
   output
 </div>
 
-<div class="span-20 last">
+<div class="span-20">
   <form>
     <input type="text" class="inline" id="input">
     <%= link_to "ENTER", "#", :class => "primary enter button negative" %>
@@ -16,28 +16,25 @@
 </div>
 
 <div class="span-10">
-  <%= link_to "Matrix", "#", :class => "button _left" %>
-  <%= link_to "Stats", "#", :class => "button _middle" %>
-  <%= link_to "Vars", "#", :class => "button _middle" %>
-  <%= link_to "Graph", "#", :class => "button _middle" %>
-  <%= link_to "Trig", "#", :class => "button _middle" %>
-  <%= link_to "Math", "#", :class => "button _right" %>
-  
-  <br /><br />
-  
-  <%= link_to "Y=", "#", :class => "button _left" %>
-  <%= link_to "Graph", "#", :class => "button _middle" %>
-  <%= link_to "Window", "#", :class => "button _middle" %>
-  <%= link_to "Zoom", "#", :class => "button _middle" %>
-  <%= link_to "Table", "#", :class => "button _right" %>
-  
-  <br /><br />
-  
-  <%= link_to "Basic", "#", :class => "button _left" %>
-  <%= link_to "LaTeX", "#", :class => "button _middle" %>
-  <%= link_to "Export", "#", :class => "button _right" %>
+  <%= link_to "Matrix", "#", :class => "button _left matrix_option mode_option" %>
+  <%= link_to "Stats", "#", :class => "button _middle mode_option" %>
+  <%= link_to "Vars", "#", :class => "button _middle mode_option" %>
+  <%= link_to "Graph", "#", :class => "button _middle mode_option" %>
+  <%= link_to "Trig", "#", :class => "button _middle mode_option" %>
+  <%= link_to "Math", "#", :class => "button _right math_option mode_option" %>  
 </div>
 
-<div class="span-10 last">
-  input options
+<div class="span-10">
+
+  <div class="default_panel mode_panel">
+    DEFAULT PANEL
+  </div>
+  
+  <div class="math_panel mode_panel">
+    MATH PANEL
+  </div>
+  <div class="matrix_panel mode_panel">
+    MATRIX PANEL
+  </div>
+
 </div>

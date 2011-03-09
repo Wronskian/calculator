@@ -1,13 +1,20 @@
 <header>
 
-  <div class = "span-24 last"><%= link_to logo, root_path %></div>
+  <div class="span-24 last"><%= link_to logo, root_path %></div>
 
-  <nav>
-    <div class = "span-24 last">
-      <a href = "#" class = "button _left">Help</a>
-      <a href = "#" class = "button _middle">Settings</a>
-      <a href = "#" class = "button _right">Export</a>
+  <div class="span-24 last">
+    <a href="#" class = "button _left">Help</a>
+    <%= link_to "Settings", "#", :class => "button _right settings_toggle" %>
+  </div>
+  
+  <div class="span-24 last">
+    <div class="settings_panel">
+      <div class="span-2">&nbsp;</div>
+      <div class="span-20">
+        SETTINGS PANEL MOTHERFUCKER!
+      </div>
+      <div class="span-2 last">&nbsp;</div>
     </div>
-  </nav>
+  </div>
   
 </header>

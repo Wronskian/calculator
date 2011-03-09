@@ -1,7 +1,12 @@
+html {
+  overflow-y: scroll;
+}
+
 input#input {
   width: 710px;
   padding: 5px;
   margin-top: 0px;
+  margin-bottom: 5px;
 }
 
 div#stack {
@@ -18,4 +23,35 @@ div#output {
   height: 363px;
   margin: 5px;
   border: 1px solid #bbb;
+}
+
+.settings_panel {
+  height: 363px;
+  display: none;
+  border: 1px solid #bbb;
+}
+
+a.button.selected {
+  background: #CECECE url('../images/selected_button_bg.png') 0 0 no-repeat;
+  color: #FFF; 
+  border-color: #393; 
+  text-decoration: none;
+  text-shadow: -1px -1px 0 rgba(0,0,0,0.3); 
+  background-color: #2D7DC5;
+}
+
+a.button.selected:hover {
+  border-color: #393;
+}
+
+.mode_panel {
+  height: 300px;
+  display: none;
+  border: 1px solid #bbb;
+  margin: 5px;
+}
+
+.default_panel {
+  height: 300px;
+  display: block;
 }
