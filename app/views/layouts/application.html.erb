@@ -13,13 +13,20 @@
     
     <%= render 'layouts/header' %>
     
-    <div class = "span-2">&nbsp;</div>
+    <div class = "span-2">
+      <div class="stack_panel">
+        <%= link_to "Swap", "#", :class => "stack button" %><br />
+        <%= link_to "View", "#", :class => "stack button" %><br />
+      </div>
+    </div>
     
-    <div class = "span-20">
+    <div class = "span-20 last">
       <%= yield %>
     </div>
     
-    <div class = "span-2 last">&nbsp;</div>
+    <div class="span-2 last" id="sidebar">
+      <%= render 'layouts/mode_panels_sidebar' %>
+    </div>
     
     <%= render 'layouts/footer' %>
     

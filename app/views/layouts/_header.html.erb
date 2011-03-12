@@ -3,17 +3,17 @@
   <div class="span-24 last"><%= link_to logo, root_path %></div>
 
   <div class="span-24 last">
-    <a href="#" class = "button _left">Help</a>
+    <%= link_to "Help", "#", :class => "button _left help_toggle" %>
     <%= link_to "Settings", "#", :class => "button _right settings_toggle" %>
   </div>
   
   <div class="span-24 last">
+    <div class="help_panel">
+      <%= render 'layouts/help_panel' %>
+    </div>
+  
     <div class="settings_panel">
-      <div class="span-2">&nbsp;</div>
-      <div class="span-20">
-        SETTINGS PANEL MOTHERFUCKER!
-      </div>
-      <div class="span-2 last">&nbsp;</div>
+      <%= render 'layouts/settings_panel' %>
     </div>
   </div>
   

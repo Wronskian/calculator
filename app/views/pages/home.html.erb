@@ -1,10 +1,8 @@
 <div class="span-10" id="stack">
-  <% 30.downto 1 do |i| %>
-    [<%= i %>]: <br />
-  <% end %>
+  stack
 </div>
 
-<div class="span-10" id="output">
+<div class="span-10 last" id="output">
   output
 </div>
 
@@ -15,26 +13,10 @@
   </form>
 </div>
 
-<div class="span-10">
-  <%= link_to "Matrix", "#", :class => "button _left matrix_option mode_option" %>
-  <%= link_to "Stats", "#", :class => "button _middle mode_option" %>
-  <%= link_to "Vars", "#", :class => "button _middle mode_option" %>
-  <%= link_to "Graph", "#", :class => "button _middle mode_option" %>
-  <%= link_to "Trig", "#", :class => "button _middle mode_option" %>
-  <%= link_to "Math", "#", :class => "button _right math_option mode_option" %>  
+<div class="span-20">
+  <%= render 'pages/mode_options' %>
 </div>
 
-<div class="span-10">
-
-  <div class="default_panel mode_panel">
-    DEFAULT PANEL
-  </div>
-  
-  <div class="math_panel mode_panel">
-    MATH PANEL
-  </div>
-  <div class="matrix_panel mode_panel">
-    MATRIX PANEL
-  </div>
-
+<div class="span-20 last">
+  <%= render 'pages/mode_panels' %>
 </div>
